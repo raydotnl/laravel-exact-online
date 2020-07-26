@@ -1,9 +1,9 @@
 <?php
 
-namespace PendoNL\LaravelExactOnline\Providers;
+namespace Raydotnl\LaravelExactOnline\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use PendoNL\LaravelExactOnline\LaravelExactOnline;
+use Raydotnl\LaravelExactOnline\LaravelExactOnline;
 
 class LaravelExactOnlineServiceProvider extends ServiceProvider
 {
@@ -63,7 +63,7 @@ class LaravelExactOnlineServiceProvider extends ServiceProvider
                 $connection->setTokenExpires($config->exact_tokenExpires);
             }
 
-            $connection->setTokenUpdateCallback('\PendoNL\LaravelExactOnline\LaravelExactOnline::tokenUpdateCallback');
+            $connection->setTokenUpdateCallback('\Raydotnl\LaravelExactOnline\LaravelExactOnline::tokenUpdateCallback');
 
             try {
                 if (isset($config->exact_authorisationCode)) {
