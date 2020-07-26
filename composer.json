@@ -1,37 +1,41 @@
 {
-    "name": "pendonl/laravel-exact-online",
+    "name": "raydotnl/laravel-exact-online",
     "description": "Laravel Facade wrapper for Exact Online PHP API",
     "require": {
         "picqer/exact-php-client": "^3.1"
     },
     "require-dev": {
-      "phpunit/phpunit": "~5.0"
+        "phpunit/phpunit": "~5.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Joshua de Gier",
             "email": "info@pendo.nl"
+        },
+        {
+            "name": "Sjoerd Rutten",
+            "email": "sjoerd@ray.nl"
         }
     ],
     "autoload": {
         "psr-4": {
-            "PendoNL\\LaravelExactOnline\\": "src/"
+            "Raydotnl\\LaravelExactOnline\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PendoNL\\LaravelExactOnline\\Test\\": "tests"
+            "Raydotnl\\LaravelExactOnline\\Test\\": "tests"
         }
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "PendoNL\\LaravelExactOnline\\Providers\\LaravelExactOnlineServiceProvider"
+                "Raydotnl\\LaravelExactOnline\\Providers\\LaravelExactOnlineServiceProvider"
             ],
             "aliases": {
-                "ExactOnline": "PendoNL\\LaravelExactOnline\\LaravelExactOnlineFacade"
+                "ExactOnline": "Raydotnl\\LaravelExactOnline\\LaravelExactOnlineFacade"
             }
         }
     }
